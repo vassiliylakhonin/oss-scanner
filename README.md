@@ -1,3 +1,28 @@
+# OSS Scanner enrollment fork
+
+Maintainer fork of [Anthropic OSS Scanner](https://github.com/anthropics/oss-scanner),
+used to prepare enrollment requests for Agenda Intelligence MD and Vizier.
+Anthropic operates the scanning service and decides acceptance.
+
+## Start here
+
+| Project | Upstream request | Audit preparation |
+| --- | --- | --- |
+| Agenda Intelligence MD | [Enrollment PR #843](https://github.com/anthropics/oss-scanner/pull/843) | [Source-built offline environment](https://github.com/vassiliylakhonin/agenda-intelligence-md/tree/main/.oss-scanner) |
+| Vizier | [Enrollment PR #844](https://github.com/anthropics/oss-scanner/pull/844) | [Source-built offline environment](https://github.com/vassiliylakhonin/vizier/tree/main/.oss-scanner) |
+
+The upstream requests are the place to check current enrollment decisions.
+A fork, a submitted request or a passing build does not establish acceptance,
+a completed security scan or security certification. Creating this fork does
+not run the Anthropic service locally.
+
+To prepare another request, follow the [upstream enrollment instructions](https://github.com/anthropics/oss-scanner#how-to-sign-up).
+The service terms, review and reporting process belong to Anthropic. The source
+below preserves this fork's upstream documentation for reference.
+
+<details>
+<summary>Upstream service documentation — Anthropic OSS Scanner</summary>
+
 # OSS Scanner
 
 OSS Scanner is a service by Anthropic to scan critical open-source repositories for security vulnerabilities. Learn more about the service at [red.anthropic.com/oss-scanner](https://red.anthropic.com/oss-scanner).
@@ -79,3 +104,5 @@ Please visit [red.anthropic.com/oss-scanner](https://red.anthropic.com/oss-scann
 ---
 
 **Maintenance status:** this repository is actively maintained by Anthropic. We review and merge enrollment pull requests (changes under `projects/<name>/`) only; we do not accept other contributions, including changes to `tools/` or `templates/`. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to enroll, [SECURITY.md](SECURITY.md) to report a vulnerability in this repository, and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+</details>
